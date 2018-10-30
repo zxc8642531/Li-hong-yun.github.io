@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test1</title>
+    <link rel="stylesheet" href="meyer.css">
+    <style type="text/css">
+        * {
+            font-family: "微軟正黑體";
+            box-sizing: border-box;
+        }
+
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            /*虛擬元素 vs overflow vs 自己設定pp的高度 */
+            clear: both;
+
+        }
+
+        /* #banner{
+      background-image: url(https://source.unsplash.com/random/1600x600);
+      background-position:center; 
+      background-size:cover; 
+      background-repeat: no-repeat;
+      height:600px;
+    } */
+     
+
+        .full-width {
+            width: 100%;
+            
+        }
+
+        .fixed-width {
+            width: 1024px;
+            margin: auto;
+          
+            
+        }
+
+        #banner {
+            background-image: url(https://source.unsplash.com/random/1600x600);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: 600px; */
+            padding: 300px 0;
+        }
+
+        #container{
+          padding:50px 0;
+          background-color:rgb(226, 203, 154); 
+        }
+        #img2{
+            background-image: url(https://source.unsplash.com/random/1600x400);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px; 
+        }
+        #contact {
+            padding: 50px 0;
+        }
+
+        .col-1 {
+            width: calc(100%/12*1)
+        }
+
+        .col-2 {
+            width: calc(100%/12*2)
+        }
+
+        .col-3 {
+            width: calc(100%/12*3)
+        }
+
+        .col-4 {
+            width: calc(100%/12*4)
+        }
+
+        .col-5 {
+            width: calc(100%/12*5)
+        }
+
+        .col-6 {
+            width: calc(100%/12*6)
+        }
+
+        .col-7 {
+            width: calc(100%/12*7)
+        }
+
+        .col-8 {
+            width: calc(100%/12*8)
+        }
+
+        .col-9 {
+            width: calc(100%/12*9)
+        }
+
+        .col-10 {
+            width: calc(100%/12*10)
+        }
+
+        .col-11 {
+            width: calc(100%/12*11)
+        }
+
+        .col-12 {
+            width: calc(100%/12*12)
+        }
+
+        [class*="col"] {
+            float: left;
+            padding: 15px;
+
+        }
+        
+
+
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <div class="full-width" id="banner"></div>
+
+    <div class="full-width" id="container">
+      <div class="fixed-width clearfix">
+
+        <div class="col-3">
+            <h1>HEY</h1>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore adipisci ullam soluta reprehenderit praesentium ut nisi,
+            iure aliquam perferendis impedit officiis laboriosam!
+            Quas similique sunt architecto quisquam porro itaque libero fugiat illo.
+            Vitae repellat a est recusandae doloremque illum voluptatem,
+            quaerat repudiandae exercitationem minus quae laudantium, expedita omnis, corporis libero!
+            </p>
+        </div>
+        <div class="col-3">
+            <h1>HEY</h1>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore adipisci ullam soluta reprehenderit praesentium ut nisi,
+            iure aliquam perferendis impedit officiis laboriosam!
+            Quas similique sunt architecto quisquam porro itaque libero fugiat illo.
+            Vitae repellat a est recusandae doloremque illum voluptatem,
+            quaerat repudiandae exercitationem minus quae laudantium, expedita omnis, corporis libero!
+            </p>
+        </div>
+        <div class="col-3">
+            <h1>HEY</h1>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore adipisci ullam soluta reprehenderit praesentium ut nisi,
+            iure aliquam perferendis impedit officiis laboriosam!
+            Quas similique sunt architecto quisquam porro itaque libero fugiat illo.
+            Vitae repellat a est recusandae doloremque illum voluptatem,
+            quaerat repudiandae exercitationem minus quae laudantium, expedita omnis, corporis libero!
+            </p>
+        </div>
+        <div class="col-3">
+            <h1>HEY</h1>
+            <p> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore adipisci ullam soluta reprehenderit praesentium ut nisi,
+            iure aliquam perferendis impedit officiis laboriosam!
+            Quas similique sunt architecto quisquam porro itaque libero fugiat illo.
+            Vitae repellat a est recusandae doloremque illum voluptatem,
+            quaerat repudiandae exercitationem minus quae laudantium, expedita omnis, corporis libero!
+            </p>
+        </div>
+
+    </div>
+    </div>
+    <div class="full-width" id="img2"></div>
+
+    <div class="full-width" id="contact">
+            <div class="fixed-width clearfix">
+                <div class="col-5">
+                    <h2>title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aut ut, quae mollitia vel ea dolor veniam eligendi deserunt fuga nulla odit suscipit sint, debitis atque quas velit consequatur dolorem.
+                    </p>
+                    <a href="#">more</a>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                        <ul>
+                            <li>list</li>
+                            <li>list</li>
+                            <li>list</li>
+                            <li>list</li>
+                            <li>list</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>版面字體水平垂直置中方法1&2</title>
+    <style>
+    .container{
+      width:600px;
+      height:400px;
+      background-color: aquamarine;
+      display: table;
+      margin: auto;
+          }
+    .box{
+       background-color: beige;
+       display:table-cell;
+       text-align: center;/*方法二:水平置中*/
+       vertical-align: middle;/*垂直置中*/
+
+       /*方法一
+       text-align:center;
+       line-height:400px;   
+       */
+    }    
+
+    
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box">
+          test
+          <br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio.
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
